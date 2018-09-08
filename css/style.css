@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    margin: 80px auto;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    font-size: 16pt;
+    opacity: 0.9;
+}
+
+.AddCity {
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    font-size: 16pt;
+    color: white;
+}
+
+.show {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.popupBack{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 3;
+    opacity: 0.4;
+}
+.popup {
+    position: fixed;
+    text-align: center;
+    background: #232021;
+    padding: 10px;
+    z-index: 4;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    border-radius: 10px;
+}
+
+.popup>form {
+    margin-top: 20px;
+}
+
+.leftBtnClear {
+    margin-left: 10px;
+}
+
+.leftBtn {
+    margin-left: 10px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.delete {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn-block {
+    margin-top: 5px;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('img/Big-Apple.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+@media screen and (max-device-width: 800px) {
+    #bgvid {
+        display: none;
+    }
+    body {
+        background: url(img/Big-Apple.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .table {
+        margin: 30px auto;
+        font-family: 'Cormorant', serif;
+        font-weight: 600;
+        font-size: 10pt;
+    }
+    .leftBtn {
+        margin-left: 0px;
+    }
+    .leftBtnClear {
+        margin-left: 10px;
+    }
+    .table td {
+        text-align: center;
+        line-height: 30px;
+        height: 10px;
+    }
+    .sky {
+        white-space: nowrap;
+    }
+    #new-board-btn {
+        white-space: normal;
+        margin: 0px auto;
+        width: 40px;
+        font-size: 10pt;
+        height: 30px;
+        padding: 0px;
+    }
+    #new-board-btnWant {
+        white-space: normal;
+        margin: 0px auto;
+        width: 90px;
+        font-size: 10pt;
+        height: 30px;
+        padding: 0px;
+    }
+    #new-board-btnDelete {
+        white-space: normal;
+        margin: 0px auto;
+        width: 45px;
+        font-size: 10pt;
+        height: 30px;
+        padding: 0px;
+    }
+}
